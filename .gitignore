@@ -1,0 +1,39 @@
+# eclipse
+.classpath
+.project
+.settings
+.checkstyle
+/**/package-lock.json
+# sts
+.springBeans
+# Maven
+target/
+./social-carpooling-backend/target/
+dist/
+release.properties
+*.versionsBackup
+*.releaseBackup
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+# Idea
+*.iml
+.idea/
+# npm
+node_modules/
+npm-debug.log
+# bower
+bower_components/
+# no js
+src/**/*.js
+src/**/*.js.map
+*.css
+*.css.map
+.tmp
+.tscache
+!external/*.js
+!external/*.css
+!Gruntfile.js
+# JRebel
+rebel.xml
