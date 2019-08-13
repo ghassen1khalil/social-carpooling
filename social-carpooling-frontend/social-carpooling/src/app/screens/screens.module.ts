@@ -3,11 +3,12 @@ import { CommonModule } from '@angular/common';
 import { LoginComponent } from './login/login.component';
 import {NbButtonModule, NbLayoutModule, NbThemeModule} from '@nebular/theme';
 import {NebularComponentsModule} from '../shared/nebular-components.module';
+import { HomeComponent } from './home/home.component';
 
 
 
 @NgModule({
-  declarations: [LoginComponent],
+  declarations: [LoginComponent, HomeComponent],
   imports: [
     CommonModule,
     NebularComponentsModule,

@@ -1,3 +1,3 @@
 export const urlConfig = {
-  'login': 'login',
+  'login': 'createFacebookAuthorization',
 }

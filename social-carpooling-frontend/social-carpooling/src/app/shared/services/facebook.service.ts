@@ -12,7 +12,6 @@ export class FacebookService {
 
 
   public login(){
-    console.log("Do login()");
     console.log("url : " + environment.context + 'social/' +  urlConfig.login);
     return this.httpClient.get(environment.context + 'social/' +  urlConfig.login);
   }

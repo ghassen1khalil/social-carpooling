@@ -41,6 +41,7 @@ public class FacebookController {
     @GetMapping("/facebook")
     public void createFacebookAccessToken(HttpServletRequest request, @RequestParam("code") String code) {
         request.getSession().setAttribute("accessToken", facebookService.createFacebookAccessToken(code));
+        log.info((String) request.getSession().getAttribute("accessToken"));
     }
 
     //TODO : gérer les exceptions !!

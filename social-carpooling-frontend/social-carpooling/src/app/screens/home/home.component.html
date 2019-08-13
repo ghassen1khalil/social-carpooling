@@ -1,0 +1,13 @@
+<nb-layout>
+  <nb-layout-column class="" style="display: flex; flex-direction: column">
+    <nb-card>
+      <nb-card-body>
+        <input type="text" nbInput placeholder="Lieu de départ" style="margin-right: 10px">
+        <input type="text" nbInput placeholder="Lieu d'arrivée" style="margin-right: 10px">
+        <input [nbDatepicker]="datepicker" nbInput placeholder="Date de voyage" style="margin-right: 10px">
+        <nb-datepicker #datepicker></nb-datepicker>
+        <button nbButton>Covoiturey !</button>
+      </nb-card-body>
+    </nb-card>
+  </nb-layout-column>
+</nb-layout>

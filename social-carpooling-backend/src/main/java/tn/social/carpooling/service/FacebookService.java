@@ -29,11 +29,6 @@ public class FacebookService {
     @Value("${server.host}")
     String serverHost;
 
-    /*@Value("${facebook.access.token}")
-    String facebookAccessToken;*/
-
-    //String accessToken;
-
     public String createFacebookAuthorizationURL() {
         FacebookConnectionFactory connectionFactory = new FacebookConnectionFactory(facebookAppId, facebookSecret);
         OAuth2Operations oauthOperations = connectionFactory.getOAuthOperations();
