@@ -6,7 +6,6 @@ import com.restfb.FacebookClient;
 import com.restfb.Parameter;
 import com.restfb.types.FacebookType;
 import com.restfb.types.Group;
-import com.restfb.types.User;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.social.facebook.api.Facebook;
@@ -27,34 +26,37 @@ public class FacebookService {
     String facebookAppId;
     @Value("${spring.social.facebook.appSecret}")
     String facebookSecret;
-    @Value("${facebook.access.token}")
-    String facebookAccessToken;
+    @Value("${server.host}")
+    String serverHost;
 
-    String accessToken;
+    /*@Value("${facebook.access.token}")
+    String facebookAccessToken;*/
+
+    //String accessToken;
 
     public String createFacebookAuthorizationURL() {
         FacebookConnectionFactory connectionFactory = new FacebookConnectionFactory(facebookAppId, facebookSecret);
         OAuth2Operations oauthOperations = connectionFactory.getOAuthOperations();
         OAuth2Parameters params = new OAuth2Parameters();
-        params.setRedirectUri("http://localhost:8080/facebook");
+        params.setRedirectUri(serverHost.concat("/tn-social-carpooling/social/facebook"));
         params.setScope("public_profile,email,user_birthday");
         return oauthOperations.buildAuthorizeUrl(params);
     }
 
-    public void createFacebookAccessToken(String code) {
+    public String createFacebookAccessToken(String code) {
         FacebookConnectionFactory connectionFactory = new FacebookConnectionFactory(facebookAppId, facebookSecret);
-        AccessGrant accessGrant = connectionFactory.getOAuthOperations().exchangeForAccess(code, "http://localhost:8080/facebook", null);
-        accessToken = accessGrant.getAccessToken();
+        AccessGrant accessGrant = connectionFactory.getOAuthOperations().exchangeForAccess(code, "http://localhost:8080/tn-social-carpooling/social/facebook", null);
+        return accessGrant.getAccessToken();
     }
 
-    public String getName() {
+    public String getName(String accessToken) {
         Facebook facebook = new FacebookTemplate(accessToken);
         String[] fields = {"id", "name"};
         return facebook.fetchObject("me", String.class, fields);
     }
 
-    public void testRestFacebook() {
-        FacebookClient facebookClient = new DefaultFacebookClient(facebookAccessToken);
+    public void publishToGroups(String accessToken) {
+        FacebookClient facebookClient = new DefaultFacebookClient(accessToken);
         Connection<Group> groupConnections = facebookClient.fetchConnection("me/groups", Group.class);
         for (List<Group> groupList : groupConnections) {
             for (Group group : groupList) {
@@ -65,8 +67,5 @@ public class FacebookService {
                 }
             }
         }
-
-        /*User user = facebookClient.fetchObject("me", User.class);
-        System.out.println("Name =" + user.getName());*/
     }
 }

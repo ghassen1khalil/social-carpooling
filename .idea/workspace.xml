@@ -17,11 +17,41 @@
       <change afterPath="$PROJECT_DIR$/../karya-backend/src/main/java/fr/karya/config/SecurityConfig.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../karya-backend/src/main/java/fr/karya/config/SwaggerConfig.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../karya-backend/src/main/java/fr/karya/rest/DummyController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/proxy.conf.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../socleJavaEE/.idea/compiler.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../socleJavaEE/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/social-carpooling-backend/src/main/java/tn/social/carpooling/controller/FacebookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/social-carpooling-backend/src/main/java/tn/social/carpooling/controller/FacebookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/social-carpooling-backend/src/main/java/tn/social/carpooling/service/FacebookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/social-carpooling-backend/src/main/java/tn/social/carpooling/service/FacebookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/social-carpooling-backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/social-carpooling-backend/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/angular.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/e2e/protractor.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/e2e/src/app.e2e-spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/e2e/src/app.po.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/e2e/tsconfig.e2e.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/proxy.conf.json" beforeDir="false" afterPath="$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/proxy.conf.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/src/app/app-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/src/app/app.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/src/app/app.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/src/app/app.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/src/app/app.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/src/assets/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/src/app/shared/constant/url-config.constants.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/src/browserslist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/src/environments/environment.prod.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/src/environments/environment.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/src/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/src/karma.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/src/polyfills.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/src/test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/src/tsconfig.app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/src/tsconfig.spec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/src/tslint.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/tslint.json" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -33,22 +63,56 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="social-carpooling" />
+  </component>
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/proxy.conf.json">
+        <entry file="file://$PROJECT_DIR$/social-carpooling-backend/src/main/java/tn/social/carpooling/service/FacebookService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="68" selection-start-line="5" selection-start-column="68" selection-end-line="5" selection-end-column="68" />
+            <state relative-caret-position="212">
+              <caret line="57" column="16" selection-start-line="57" selection-start-column="16" selection-end-line="57" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#873#906#1" expanded="true" />
+                <element signature="e#945#982#1" expanded="true" />
+                <element signature="e#992#1008#1" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/package.json">
+        <entry file="file://$PROJECT_DIR$/social-carpooling-backend/src/main/java/tn/social/carpooling/controller/FacebookController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
+            <state relative-caret-position="286">
+              <caret line="45" column="4" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#530#531#0" expanded="true" />
+                <element signature="e#584#585#0" expanded="true" />
+                <element signature="e#796#797#0" expanded="true" />
+                <element signature="e#846#847#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="709">
+              <caret line="73" column="50" selection-start-line="73" selection-start-column="28" selection-end-line="73" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/social-carpooling-backend/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -85,18 +149,37 @@
       <list>
         <option value="$PROJECT_DIR$/social-carpooling-backend/src/main/java/tn/social/carpooling/config/SwaggerConfig.java" />
         <option value="$PROJECT_DIR$/social-carpooling-backend/src/main/java/tn/social/carpooling/controller/FacebookControlle.java" />
-        <option value="$PROJECT_DIR$/social-carpooling-backend/src/main/java/tn/social/carpooling/controller/FacebookController.java" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/social-carpooling-backend/pom.xml" />
         <option value="$PROJECT_DIR$/social-carpooling-backend/src/main/java/tn/social/carpooling/Application.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/social-carpooling-backend/src/main/java/tn/social/carpooling/service/FacebookService.java" />
-        <option value="$PROJECT_DIR$/social-carpooling-backend/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/angular.json" />
         <option value="$PROJECT_DIR$/social-carpooling-frontend/social-carpooling-frontend/angular.json" />
-        <option value="$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/proxy.conf.json" />
+        <option value="$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/angular.json" />
+        <option value="$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/src/app/app-routing.module.ts" />
+        <option value="$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/src/app/core/core.module.ts" />
+        <option value="$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/src/app/core/routing/app-routing.module.ts" />
         <option value="$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/package.json" />
+        <option value="$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/src/app/screens/login/login.component.css" />
+        <option value="$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/src/app/app.component.css" />
+        <option value="$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/src/styles.css" />
+        <option value="$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/tsconfig.json" />
+        <option value="$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/src/app/app.component.ts" />
+        <option value="$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/src/app/shared/constant/url-config.constants.ts" />
+        <option value="$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/src/environments/environment.ts" />
+        <option value="$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/src/environments/environment.prod.ts" />
+        <option value="$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/src/app/screens/login/login.component.ts" />
+        <option value="$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/src/app/shared/services/facebook.service.ts" />
+        <option value="$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/proxy.conf.json" />
+        <option value="$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/src/app/shared/shared.module.ts" />
+        <option value="$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/src/app/screens/screens.module.ts" />
+        <option value="$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/src/app/shared/nebular-components.module.ts" />
+        <option value="$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/src/app/screens/login/login.component.html" />
+        <option value="$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/src/app/app.component.html" />
+        <option value="$PROJECT_DIR$/social-carpooling-backend/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/social-carpooling-backend/src/main/java/tn/social/carpooling/service/FacebookService.java" />
+        <option value="$PROJECT_DIR$/social-carpooling-backend/src/main/java/tn/social/carpooling/controller/FacebookController.java" />
       </list>
     </option>
   </component>
@@ -129,13 +212,57 @@
             <path>
               <item name="social-carpooling" type="b2602c69:ProjectViewProjectNode" />
               <item name="social-carpooling" type="462c0819:PsiDirectoryNode" />
-              <item name="social-carpooling-frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="social-carpooling-backend" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="social-carpooling" type="b2602c69:ProjectViewProjectNode" />
               <item name="social-carpooling" type="462c0819:PsiDirectoryNode" />
-              <item name="social-carpooling-frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="social-carpooling-backend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="social-carpooling" type="b2602c69:ProjectViewProjectNode" />
               <item name="social-carpooling" type="462c0819:PsiDirectoryNode" />
+              <item name="social-carpooling-backend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="social-carpooling" type="b2602c69:ProjectViewProjectNode" />
+              <item name="social-carpooling" type="462c0819:PsiDirectoryNode" />
+              <item name="social-carpooling-backend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="social-carpooling" type="b2602c69:ProjectViewProjectNode" />
+              <item name="social-carpooling" type="462c0819:PsiDirectoryNode" />
+              <item name="social-carpooling-backend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="carpooling" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="social-carpooling" type="b2602c69:ProjectViewProjectNode" />
+              <item name="social-carpooling" type="462c0819:PsiDirectoryNode" />
+              <item name="social-carpooling-backend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="carpooling" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="social-carpooling" type="b2602c69:ProjectViewProjectNode" />
+              <item name="social-carpooling" type="462c0819:PsiDirectoryNode" />
+              <item name="social-carpooling-backend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="carpooling" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -159,6 +286,18 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/social-carpooling-frontend/social-carpooling-old/node_modules/typescript/lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/social-carpooling-frontend/social-carpooling" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/src/app/shared" />
+      <recent name="$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/src/app/core/routing" />
+      <recent name="$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/src/app" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -172,7 +311,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.start">
+  <component name="RunManager" selected="Spring Boot.Application">
     <configuration name="social-carpooling [clean,install,-X]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -230,8 +369,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.start" />
         <item itemvalue="Spring Boot.Application" />
+        <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
   </component>
@@ -245,78 +384,49 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1565089466912</updated>
-      <workItem from="1565089470338" duration="9699000" />
+      <workItem from="1565089470338" duration="27817000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9699000" />
+    <option name="totallyTimeSpent" value="27817000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Web" side_tool="true" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Java Enterprise" />
-      <window_info anchor="bottom" id="Spring" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.2614622" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.32961586" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.26889715" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.38289964" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Bean Validation" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
-    <layout-to-restore>
-      <window_info id="Web" order="0" side_tool="true" />
-      <window_info id="Designer" order="1" />
-      <window_info id="UI Designer" order="2" />
-      <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="4" visible="true" weight="0.24964234" />
-      <window_info id="Structure" order="5" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Event Log" order="0" side_tool="true" />
-      <window_info anchor="bottom" id="Docker" order="1" />
-      <window_info anchor="bottom" id="Version Control" order="2" />
-      <window_info anchor="bottom" id="Database Changes" order="3" />
+      <window_info id="UI Designer" order="0" />
+      <window_info id="Favorites" order="1" sideWeight="0.5016949" side_tool="true" weight="0.24964234" />
+      <window_info id="npm" order="2" sideWeight="0.19097222" side_tool="true" visible="true" weight="0.29971388" />
+      <window_info id="Web" order="3" sideWeight="0.5008183" side_tool="true" weight="0.24236111" />
+      <window_info id="Designer" order="4" />
+      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.8090278" visible="true" weight="0.29971388" />
+      <window_info id="Structure" order="6" sideWeight="0.5016949" side_tool="true" weight="0.24964234" />
+      <window_info anchor="bottom" id="TypeScript" order="0" />
+      <window_info anchor="bottom" id="Terminal" order="1" weight="0.26139817" />
+      <window_info anchor="bottom" id="Docker" order="2" />
+      <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="4" weight="0.32961586" />
-      <window_info anchor="bottom" id="Spring" order="5" />
-      <window_info anchor="bottom" id="Terminal" order="6" weight="0.3283767" />
-      <window_info anchor="bottom" id="Java Enterprise" order="7" />
-      <window_info anchor="bottom" id="Message" order="8" />
-      <window_info anchor="bottom" id="Find" order="9" />
-      <window_info anchor="bottom" id="Run" order="10" weight="0.26889715" />
-      <window_info anchor="bottom" id="Debug" order="11" weight="0.38342696" />
-      <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="14" />
+      <window_info anchor="bottom" id="Java Enterprise" order="5" />
+      <window_info anchor="bottom" id="Database Changes" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Spring" order="8" />
+      <window_info anchor="bottom" id="Message" order="9" />
+      <window_info anchor="bottom" id="Find" order="10" weight="0.40272614" />
+      <window_info anchor="bottom" id="Run" order="11" weight="0.25937185" />
+      <window_info active="true" anchor="bottom" id="Debug" order="12" visible="true" weight="0.28624535" />
+      <window_info anchor="bottom" id="Cvs" order="13" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="14" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="15" />
       <window_info anchor="right" id="Palette" order="0" />
       <window_info anchor="right" id="Database" order="1" />
-      <window_info anchor="right" id="Bean Validation" order="2" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="2" />
+      <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info anchor="right" id="Maven" order="4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
-    </layout-to-restore>
+    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -334,18 +444,51 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/social-carpooling-backend/src/main/java/tn/social/carpooling/controller/FacebookController.java</url>
-          <line>20</line>
+          <line>50</line>
           <properties />
-          <option name="timeStamp" value="5" />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/social-carpooling-backend/src/main/java/tn/social/carpooling/controller/FacebookController.java</url>
+          <line>34</line>
+          <properties />
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/social-carpooling-backend/src/main/java/tn/social/carpooling/service/FacebookService.java</url>
-          <line>56</line>
+          <line>47</line>
           <properties />
-          <option name="timeStamp" value="6" />
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/social-carpooling-backend/src/main/java/tn/social/carpooling/controller/FacebookController.java</url>
+          <line>59</line>
+          <properties />
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/social-carpooling-backend/src/main/java/tn/social/carpooling/controller/FacebookController.java</url>
+          <line>61</line>
+          <properties />
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/social-carpooling-backend/src/main/java/tn/social/carpooling/controller/FacebookController.java</url>
+          <line>42</line>
+          <properties />
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateCodeFragment">
+      <expression>
+        <expression-string>oauthOperations.buildAuthorizeUrl(params);</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/social-carpooling-frontend/pom.xml">
@@ -399,13 +542,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="65" column="12" selection-start-line="65" selection-start-column="12" selection-end-line="69" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/social-carpooling-backend/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="691">
@@ -439,45 +575,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/social-carpooling-backend/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="65" lean-forward="true" selection-start-line="3" selection-start-column="65" selection-end-line="3" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/social-carpooling-backend/src/main/java/tn/social/carpooling/controller/FacebookController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#530#531#0" expanded="true" />
-            <element signature="e#584#585#0" expanded="true" />
-            <element signature="e#1150#1151#0" expanded="true" />
-            <element signature="e#1198#1199#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.8.RELEASE/spring-web-5.1.8.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="107" selection-start-line="107" selection-end-line="107" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/social-carpooling-backend/src/main/java/tn/social/carpooling/service/FacebookService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="57" selection-start-line="57" selection-end-line="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1022#1048#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/social-carpooling-frontend/social-carpooling-frontend/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -492,17 +589,256 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/proxy.conf.json">
+    <entry file="file://$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/node_modules/@nebular/theme/theme.module.d.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="68" selection-start-line="5" selection-start-column="68" selection-end-line="5" selection-end-column="68" />
+        <state relative-caret-position="105">
+          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/social-carpooling-frontend/social-carpooling-old/node_modules/@nebular/theme/components/button/button.component.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="322" column="21" selection-start-line="322" selection-start-column="21" selection-end-line="322" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/angular.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="26" column="72" selection-start-line="26" selection-start-column="72" selection-end-line="26" selection-end-column="72" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
+          <caret line="5" column="53" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/src/app/core/routing/app-routing.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/src/app/core/core.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/src/app/app.component.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/tsconfig.app.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/tsconfig.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/src/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/src/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="1" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/src/app/screens/login/login.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/src/environments/environment.prod.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="36" selection-start-line="1" selection-start-column="36" selection-end-line="1" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/src/environments/environment.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/src/app/shared/constant/url-config.constants.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/src/app/shared/services/facebook.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/proxy.conf.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="69" selection-start-line="5" selection-start-column="69" selection-end-line="5" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/src/app/screens/login/login.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="26" lean-forward="true" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/src/app/shared/shared.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/src/app/screens/screens.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/src/app/shared/nebular-components.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/src/app/screens/login/login.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="18" selection-start-column="18" selection-end-column="18" />
+          <folding>
+            <element signature="n#style#0;n#nb-layout-column#0;n#nb-layout#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#nb-card-body#0;n#nb-card#0;n#nb-layout-column#0;n#nb-layout#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/social-carpooling-frontend/social-carpooling/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="709">
+          <caret line="73" column="50" selection-start-line="73" selection-start-column="28" selection-end-line="73" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.8.RELEASE/spring-web-5.1.8.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="107" selection-start-line="107" selection-end-line="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/social-carpooling-backend/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/logging/log4j/log4j-api/2.11.2/log4j-api-2.11.2.jar!/org/apache/logging/log4j/util/Strings.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="20" column="16" lean-forward="true" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+          <folding>
+            <element signature="e#549#550#0" expanded="true" />
+            <element signature="e#603#604#0" expanded="true" />
+            <element signature="e#760#761#0" expanded="true" />
+            <element signature="e#794#795#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/social-carpooling-backend/src/main/java/tn/social/carpooling/service/FacebookService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="57" column="16" selection-start-line="57" selection-start-column="16" selection-end-line="57" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#873#906#1" expanded="true" />
+            <element signature="e#945#982#1" expanded="true" />
+            <element signature="e#992#1008#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/social-carpooling-backend/src/main/java/tn/social/carpooling/controller/FacebookController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="45" column="4" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#530#531#0" expanded="true" />
+            <element signature="e#584#585#0" expanded="true" />
+            <element signature="e#796#797#0" expanded="true" />
+            <element signature="e#846#847#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
