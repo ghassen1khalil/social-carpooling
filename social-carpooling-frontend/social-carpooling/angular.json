@@ -25,7 +25,6 @@
             ],
             "styles": [
               "node_modules/@nebular/theme/styles/prebuilt/default.css",
-              "node_modules/bootstrap/dist/css/bootstrap.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -122,6 +121,12 @@
           }
         }
       }
-    }},
-  "defaultProject": "social-carpooling"
+    }
+  },
+  "defaultProject": "social-carpooling",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }

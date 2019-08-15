@@ -2,19 +2,19 @@
   <nb-layout-column class="" style="display: flex; flex-direction: column">
     <nb-card>
       <nb-card-body>
-        <div class="row show-outline" style="width: fit-content; margin: auto">
-          <div class="col-12 col-md-3">
-            <input class="" type="text" nbInput placeholder="Lieu de départ" style="weight: 100%;">
+        <div class="row flex-display flex-column-direction show-outline" style="margin: auto">
+          <div class=" col-3">
+            <input class="row-spacing" type="text" nbInput placeholder="Lieu de départ" style="weight: 100%;">
           </div>
-          <div class="col-12 col-md-3">
-            <input type="text" nbInput placeholder="Lieu d'arrivée" style="">
+          <div class=" col-3">
+            <input class="row-spacing" type="text" nbInput placeholder="Lieu d'arrivée" style="">
           </div>
-          <div class="col-12 col-md-3">
-            <input [nbDatepicker]="datepicker" nbInput placeholder="Date de voyage" style="">
+          <div class=" col-3">
+            <input class="row-spacing" [nbDatepicker]="datepicker" nbInput placeholder="Date de voyage" style="">
             <nb-datepicker #datepicker></nb-datepicker>
           </div>
-          <div class="col-12 col-md-3">
-            <button nbButton>Chercher !</button>
+          <div class=" col-3">
+            <button class="row-spacing" nbButton style="margin: auto">Chercher !</button>
           </div>
         </div>
       </nb-card-body>
