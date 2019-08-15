@@ -2,11 +2,21 @@
   <nb-layout-column class="" style="display: flex; flex-direction: column">
     <nb-card>
       <nb-card-body>
-        <input type="text" nbInput placeholder="Lieu de départ" style="margin-right: 10px">
-        <input type="text" nbInput placeholder="Lieu d'arrivée" style="margin-right: 10px">
-        <input [nbDatepicker]="datepicker" nbInput placeholder="Date de voyage" style="margin-right: 10px">
-        <nb-datepicker #datepicker></nb-datepicker>
-        <button nbButton>Covoiturey !</button>
+        <div class="row show-outline" style="width: fit-content; margin: auto">
+          <div class="col-12 col-md-3">
+            <input class="" type="text" nbInput placeholder="Lieu de départ" style="weight: 100%;">
+          </div>
+          <div class="col-12 col-md-3">
+            <input type="text" nbInput placeholder="Lieu d'arrivée" style="">
+          </div>
+          <div class="col-12 col-md-3">
+            <input [nbDatepicker]="datepicker" nbInput placeholder="Date de voyage" style="">
+            <nb-datepicker #datepicker></nb-datepicker>
+          </div>
+          <div class="col-12 col-md-3">
+            <button nbButton>Chercher !</button>
+          </div>
+        </div>
       </nb-card-body>
     </nb-card>
   </nb-layout-column>
