@@ -1,23 +1,26 @@
 <nb-layout>
   <nb-layout-column class="" style="display: flex; flex-direction: column">
-    <nb-card>
-      <nb-card-body>
-        <div class="row flex-display flex-column-direction show-outline" style="margin: auto">
-          <div class=" col-3">
-            <input class="row-spacing" type="text" nbInput placeholder="Lieu de départ" style="weight: 100%;">
+    <div style="background-color: #3C5A99; height: 400px">
+      <nb-card>
+        <nb-card-body>
+          <div class="pure-g" style="margin: auto">
+            <div class="pure-u-xl-1-4 pure-u-lg-1-4 pure-u-md-1-3 pure-u-1 flex-display row-spacing">
+              <input type="text" nbInput placeholder="Lieu de départ" style="margin: auto">
+            </div>
+            <div class="pure-u-xl-1-4 pure-u-lg-1-4 pure-u-md-1-3 pure-u-1 flex-display row-spacing">
+              <input type="text" nbInput placeholder="Lieu d'arrivée" style="margin: auto">
+            </div>
+            <div class="pure-u-xl-1-4 pure-u-lg-1-4 pure-u-md-1-3 pure-u-1 flex-display row-spacing">
+              <input [nbDatepicker]="datepicker" nbInput placeholder="Date de voyage" style="margin: auto">
+              <nb-datepicker #datepicker></nb-datepicker>
+            </div>
+            <div class="pure-u-xl-1-4 pure-u-lg-1-4 pure-u-md-1 pure-u-1 flex-display row-spacing">
+              <button nbButton style="margin: 0; width: 100%">Chercher !</button>
+            </div>
           </div>
-          <div class=" col-3">
-            <input class="row-spacing" type="text" nbInput placeholder="Lieu d'arrivée" style="">
-          </div>
-          <div class=" col-3">
-            <input class="row-spacing" [nbDatepicker]="datepicker" nbInput placeholder="Date de voyage" style="">
-            <nb-datepicker #datepicker></nb-datepicker>
-          </div>
-          <div class=" col-3">
-            <button class="row-spacing" nbButton style="margin: auto">Chercher !</button>
-          </div>
-        </div>
-      </nb-card-body>
-    </nb-card>
+        </nb-card-body>
+      </nb-card>
+    </div>
+
   </nb-layout-column>
 </nb-layout>
