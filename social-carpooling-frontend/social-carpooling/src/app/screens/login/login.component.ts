@@ -15,6 +15,7 @@ export class LoginComponent implements OnInit {
 
   public handleConnectClick(){
     this.facebookService.login().subscribe(result => {
+    //this.facebookService.getConnectedUserName().subscribe(result => {
       console.log(result);
     });
   }
