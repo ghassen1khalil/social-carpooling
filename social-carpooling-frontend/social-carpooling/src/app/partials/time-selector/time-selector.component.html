@@ -1,0 +1,9 @@
+<div class="flex-display flex-row-direction" style="align-items: center">
+  <nb-select [(selected)]="selectedHour" style="margin-right: 10px; min-width: 50px!important;">
+    <nb-option (click)="onChoose(hour, 'HOUR')" *ngFor="let hour of hours" value="{{hour}}">{{hour}}</nb-option>
+  </nb-select>
+  <p style="margin-right: 10px">h</p>
+  <nb-select placeholder="" [(selected)]="selectedMinute" style="margin-right: 10px">
+    <nb-option (click)="onChoose(minute, 'MINUTE')" *ngFor="let minute of minutes" value="{{minute}}">{{minute}}</nb-option>
+  </nb-select>
+</div>

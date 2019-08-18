@@ -1,4 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {LoginModalComponent} from '../login-modal/login-modal.component';
+import {NbDialogService} from '@nebular/theme';
 
 @Component({
   selector: 'app-carpooling',
@@ -25,10 +27,14 @@ export class CarpoolingComponent implements OnInit {
   @Input()
   driver: string;
 
-  constructor() {
+  constructor(private dialogService: NbDialogService) {
   }
 
   ngOnInit() {
+  }
+
+  open() {
+    this.dialogService.open(LoginModalComponent);
   }
 
 }

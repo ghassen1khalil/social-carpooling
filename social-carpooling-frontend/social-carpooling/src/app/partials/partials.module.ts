@@ -4,6 +4,7 @@ import {CarpoolingComponent} from './carpooling/carpooling.component';
 import {NebularComponentsModule} from '../shared/nebular-components.module';
 import {HeaderComponent} from './header/header.component';
 import {LoginModalComponent} from './login-modal/login-modal.component';
+import { TimeSelectorComponent } from './time-selector/time-selector.component';
 
 
 @NgModule({
@@ -11,6 +12,7 @@ import {LoginModalComponent} from './login-modal/login-modal.component';
     CarpoolingComponent,
     HeaderComponent,
     LoginModalComponent,
+    TimeSelectorComponent,
   ],
   imports: [
     CommonModule,
@@ -20,7 +22,11 @@ import {LoginModalComponent} from './login-modal/login-modal.component';
     CarpoolingComponent,
     HeaderComponent,
     LoginModalComponent,
-  ]
+    TimeSelectorComponent,
+  ],
+  entryComponents: [
+    LoginModalComponent,
+  ],
 })
 export class PartialsModule {
 }

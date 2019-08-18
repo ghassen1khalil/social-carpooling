@@ -1,16 +1,15 @@
 
     <nb-card style="width: 50%">
       <nb-card-body>
-        <div style="display: flex; flex-direction: column">
-          <nb-user [name]="driver" title="Covoitureur"></nb-user>
+        <div class="flex-display flex-column-direction">
+          <nb-user [name]="driver" title="Contact : 21 463 933"></nb-user>
           <div style="padding-left: 45px">
             <p>{{nbAvailablesPlaces}} place(s) disponible(s) de {{from}} à {{destination}}<br>
               Départ {{time}} du {{rdv}}</p>
           </div>
           <div style="display: flex; flex-direction: row-reverse">
-            <button nbButton>Réserver</button>
+            <button nbButton (click)="open()">Réserver</button>
           </div>
-
         </div>
       </nb-card-body>
     </nb-card>

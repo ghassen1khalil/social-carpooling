@@ -2,10 +2,10 @@ import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {
   NbButtonModule,
-  NbCardModule,
+  NbCardModule, NbCheckboxModule,
   NbDatepickerModule, NbDialogModule, NbIconModule,
   NbInputModule,
-  NbLayoutModule,
+  NbLayoutModule, NbSelectModule,
   NbThemeModule, NbUserModule
 } from '@nebular/theme';
 import {NbEvaIconsModule} from '@nebular/eva-icons';
@@ -25,6 +25,9 @@ import {NbEvaIconsModule} from '@nebular/eva-icons';
     NbEvaIconsModule,
     NbIconModule,
     NbDialogModule.forRoot(),
+    NbSelectModule,
+    NbCheckboxModule,
+
 
   ],
   exports: [
@@ -38,6 +41,8 @@ import {NbEvaIconsModule} from '@nebular/eva-icons';
     NbEvaIconsModule,
     NbIconModule,
     NbDialogModule,
+    NbSelectModule,
+    NbCheckboxModule,
 
   ]
 })

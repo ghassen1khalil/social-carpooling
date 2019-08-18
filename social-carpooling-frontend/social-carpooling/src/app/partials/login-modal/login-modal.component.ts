@@ -8,7 +8,7 @@ import {NbDialogRef} from '@nebular/theme';
 })
 export class LoginModalComponent implements OnInit {
 
-  @Input() title: string;
+  //@Input() title: string;
 
   constructor(protected ref: NbDialogRef<LoginModalComponent>) {
   }

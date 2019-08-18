@@ -15,11 +15,7 @@ export class HeaderComponent implements OnInit {
   }
 
   open() {
-    this.dialogService.open(LoginModalComponent, {
-      context: {
-        title: 'This is a title passed to the dialog component',
-      },
-    });
+    this.dialogService.open(LoginModalComponent);
   }
 
 }
