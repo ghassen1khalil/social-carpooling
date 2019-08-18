@@ -4,6 +4,7 @@ import {AppComponent} from './app.component';
 import {ScreensModule} from './screens/screens.module';
 import {CoreModule} from './core/core.module';
 import {SharedModule} from './shared/shared.module';
+import {PartialsModule} from './partials/partials.module';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import {SharedModule} from './shared/shared.module';
     CoreModule,
     ScreensModule,
     SharedModule,
+    PartialsModule,
 
   ],
   providers: [],

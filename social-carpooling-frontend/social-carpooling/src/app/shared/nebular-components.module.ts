@@ -1,14 +1,14 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
 import {
   NbButtonModule,
   NbCardModule,
-  NbDatepickerModule,
+  NbDatepickerModule, NbDialogModule, NbIconModule,
   NbInputModule,
   NbLayoutModule,
-  NbThemeModule
+  NbThemeModule, NbUserModule
 } from '@nebular/theme';
-
+import {NbEvaIconsModule} from '@nebular/eva-icons';
 
 
 @NgModule({
@@ -21,6 +21,11 @@ import {
     NbCardModule,
     NbDatepickerModule.forRoot(),
     NbInputModule,
+    NbUserModule,
+    NbEvaIconsModule,
+    NbIconModule,
+    NbDialogModule.forRoot(),
+
   ],
   exports: [
     NbThemeModule,
@@ -29,6 +34,12 @@ import {
     NbCardModule,
     NbDatepickerModule,
     NbInputModule,
+    NbUserModule,
+    NbEvaIconsModule,
+    NbIconModule,
+    NbDialogModule,
+
   ]
 })
-export class NebularComponentsModule { }
+export class NebularComponentsModule {
+}

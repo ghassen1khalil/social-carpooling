@@ -1,23 +1,38 @@
 <nb-layout>
   <nb-layout-column class="" style="display: flex; flex-direction: column">
-      <nb-card>
-        <nb-card-body>
-          <div class="pure-g" style="margin: auto">
-            <div class="pure-u-xl-1-4 pure-u-lg-1-4 pure-u-md-1-3 pure-u-1 flex-display row-spacing">
-              <input type="text" nbInput placeholder="Lieu de départ" style="margin: auto">
-            </div>
-            <div class="pure-u-xl-1-4 pure-u-lg-1-4 pure-u-md-1-3 pure-u-1 flex-display row-spacing">
-              <input type="text" nbInput placeholder="Lieu d'arrivée" style="margin: auto">
-            </div>
-            <div class="pure-u-xl-1-4 pure-u-lg-1-4 pure-u-md-1-3 pure-u-1 flex-display row-spacing">
-              <input [nbDatepicker]="datepicker" nbInput placeholder="Date de voyage" style="margin: auto">
-              <nb-datepicker #datepicker></nb-datepicker>
-            </div>
-            <div class="pure-u-xl-1-4 pure-u-lg-1-4 pure-u-md-1 pure-u-1 flex-display row-spacing">
-              <button nbButton style="margin: 0; width: 100%">Chercher !</button>
-            </div>
+    <!--ZONE DE RECHERCHE-->
+    <nb-card>
+      <nb-card-body>
+        <div class="pure-g" style="margin: auto">
+          <div class="pure-u-xl-1-4 pure-u-lg-1-4 pure-u-md-1-3 pure-u-1 flex-display row-spacing">
+            <input type="text" nbInput placeholder="Lieu de départ" style="margin: auto">
           </div>
-        </nb-card-body>
-      </nb-card>
+          <div class="pure-u-xl-1-4 pure-u-lg-1-4 pure-u-md-1-3 pure-u-1 flex-display row-spacing">
+            <input type="text" nbInput placeholder="Lieu d'arrivée" style="margin: auto">
+          </div>
+          <div class="pure-u-xl-1-4 pure-u-lg-1-4 pure-u-md-1-3 pure-u-1 flex-display row-spacing">
+            <input [nbDatepicker]="datepicker" nbInput placeholder="Date de voyage" style="margin: auto">
+            <nb-datepicker #datepicker></nb-datepicker>
+          </div>
+          <div class="pure-u-xl-1-4 pure-u-lg-1-4 pure-u-md-1 pure-u-1 flex-display row-spacing">
+            <button nbButton style="margin: 0; width: 100%">Chercher !</button>
+          </div>
+        </div>
+      </nb-card-body>
+    </nb-card>
+    <!--ZONE DE RECHERCHE-->
+
+
+    <!--ZONE DE RESULTATS-->
+    <nb-layout class="">
+      <nb-layout-column class="" style="display: flex; flex-direction: column">
+        <app-carpooling [driver]="'Ghassen Khalil ATI'" [nbAvailablesPlaces]="'2'" [from]="'Sfax'"
+                        [destination]="'Tunis'" [time]="'18h30'" [rdv]="'Centre Ville'"></app-carpooling>
+        <app-carpooling [driver]="'Ibtissem Zneidi'" [nbAvailablesPlaces]="'4'" [from]="'Tunis'" [destination]="'Kélibiya'"
+                        [time]="'9h00'" [rdv]="'Kiosque Agile'"></app-carpooling>
+      </nb-layout-column>
+    </nb-layout>
+
+    <!--ZONE DE RESULTATS-->
   </nb-layout-column>
 </nb-layout>

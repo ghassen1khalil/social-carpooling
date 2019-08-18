@@ -1,6 +1,6 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
-import {FacebookService} from './services/facebook.service';
+import {FacebookService} from '../core/services/facebook.service';
 import {HttpClientModule} from '@angular/common/http';
 import {NebularComponentsModule} from './nebular-components.module';
 

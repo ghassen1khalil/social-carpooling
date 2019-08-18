@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {FacebookService} from '../../shared/services/facebook.service';
+import {FacebookService} from '../../core/services/facebook.service';
 
 @Component({
   selector: 'app-login',

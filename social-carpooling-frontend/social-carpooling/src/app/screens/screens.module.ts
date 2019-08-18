@@ -3,19 +3,23 @@ import {CommonModule} from '@angular/common';
 import {LoginComponent} from './login/login.component';
 import {NebularComponentsModule} from '../shared/nebular-components.module';
 import {HomeComponent} from './home/home.component';
-import {HeaderComponent} from './header/header.component';
-import { CarpoolingComponent } from './carpooling/carpooling.component';
+import {PartialsModule} from '../partials/partials.module';
 
 
 @NgModule({
-  declarations: [LoginComponent, HomeComponent, HeaderComponent, CarpoolingComponent],
+  declarations: [
+    LoginComponent,
+    HomeComponent,
+  ],
   imports: [
     CommonModule,
     NebularComponentsModule,
+    PartialsModule,
   ],
   exports: [
     LoginComponent,
-    HeaderComponent,
+    HomeComponent,
+
   ]
 })
 export class ScreensModule {
