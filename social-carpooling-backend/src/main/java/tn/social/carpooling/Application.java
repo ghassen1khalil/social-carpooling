@@ -9,11 +9,12 @@ import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
+import tn.social.carpooling.config.CorsConfiguration;
 import tn.social.carpooling.config.SwaggerConfig;
 
 @SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})
-@EnableSwagger2
 @EnableWebMvc
+@Import({SwaggerConfig.class, CorsConfiguration.class})
 public class Application {
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
