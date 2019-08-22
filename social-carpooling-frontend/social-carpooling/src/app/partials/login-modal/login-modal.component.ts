@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {NbDialogRef} from '@nebular/theme';
 import {FacebookService} from '../../core/services/facebook.service';
 
@@ -22,8 +22,8 @@ export class LoginModalComponent implements OnInit {
 
   doLogin() {
     this.facebookService.login().subscribe(result => {
-      //this.facebookService.getConnectedUserName().subscribe(result => {
       console.log(result);
+      window.open(result.toString(), '');
     });
   }
 
