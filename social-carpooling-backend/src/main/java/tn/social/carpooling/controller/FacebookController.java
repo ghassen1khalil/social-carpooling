@@ -2,6 +2,7 @@ package tn.social.carpooling.controller;
 
 import lombok.extern.slf4j.Slf4j;
 import org.apache.logging.log4j.util.Strings;
+import org.springframework.http.MediaType;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import tn.social.carpooling.service.FacebookService;
@@ -31,12 +32,15 @@ public class FacebookController {
     //@GetMapping("/createFacebookAuthorization")
     @CrossOrigin
     @RequestMapping(value = "/createFacebookAuthorization", method = RequestMethod.GET)
-    public void createFacebookAuthorization(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) {
-        try {
+    @ResponseBody
+    public String createFacebookAuthorization(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) {
+        httpServletResponse.setContentType("text/plain");
+        /*try {
             httpServletResponse.sendRedirect(facebookService.createFacebookAuthorizationURL());
         } catch (IOException e) {
             log.error(e.getMessage());
-        }
+        }*/
+        return facebookService.createFacebookAuthorizationURL();
     }
 
     @GetMapping("/facebook")
