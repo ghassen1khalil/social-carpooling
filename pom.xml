@@ -9,12 +9,12 @@
     <packaging>pom</packaging>
     <version>0.0.1-SNAPSHOT</version>
 
-    <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.1.6.RELEASE</version>
-        <relativePath/>
-    </parent>
+    <!--<parent>-->
+    <!--<groupId>org.springframework.boot</groupId>-->
+    <!--<artifactId>spring-boot-starter-parent</artifactId>-->
+    <!--<version>2.1.6.RELEASE</version>-->
+    <!--<relativePath/>-->
+    <!--</parent>-->
 
     <modules>
         <module>social-carpooling-backend</module>
@@ -35,10 +35,31 @@
         <spring-social-facebook.version>2.0.3.RELEASE</spring-social-facebook.version>
         <spring-social-core.version>1.1.6.RELEASE</spring-social-core.version>
         <rest-fb-version>2.0.0</rest-fb-version>
+
+        <maven.surefire.plugin.version>2.22.1</maven.surefire.plugin.version>
+        <maven.resources.plugin.version>3.1.0</maven.resources.plugin.version>
+        <maven.compiler.plugin>3.8.0</maven.compiler.plugin>
+        <swagger.codegen.plugin-version>3.0.8</swagger.codegen.plugin-version>
+        <maven.clean.plugin.version>3.1.0</maven.clean.plugin.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-parent</artifactId>
+                <version>${spring-boot-dependencies-version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-web</artifactId>
+                <version>${spring-boot-dependencies-version}</version>
+            </dependency>
+
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -46,9 +67,9 @@
             </dependency>
 
             <!--<dependency>-->
-                <!--<groupId>org.springframework.boot</groupId>-->
-                <!--<artifactId>spring-boot-starter-security</artifactId>-->
-                <!--<version>${spring-boot-dependencies-version}</version>-->
+            <!--<groupId>org.springframework.boot</groupId>-->
+            <!--<artifactId>spring-boot-starter-security</artifactId>-->
+            <!--<version>${spring-boot-dependencies-version}</version>-->
             <!--</dependency>-->
 
 
@@ -101,6 +122,48 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-maven-plugin</artifactId>
+                    <version>${spring-boot-dependencies-version}</version>
+                </plugin>
+                <!--<plugin>-->
+                <!--<groupId>org.apache.maven.plugins</groupId>-->
+                <!--<artifactId>maven-surefire-plugin</artifactId>-->
+                <!--<version>${maven.surefire.plugin.version}</version>-->
+                <!--</plugin>-->
+                <!--<plugin>-->
+                <!--<groupId>org.apache.maven.plugins</groupId>-->
+                <!--<artifactId>maven-resources-plugin</artifactId>-->
+                <!--<version>${maven.resources.plugin.version}</version>-->
+                <!--</plugin>-->
+                <!--<plugin>-->
+                <!--<groupId>org.apache.maven.plugins</groupId>-->
+                <!--<artifactId>maven-compiler-plugin</artifactId>-->
+                <!--<version>${maven.compiler.plugin}</version>-->
+                <!--<configuration>-->
+                <!--&lt;!&ndash; enable when jenkins image will use JDK 11 &ndash;&gt;-->
+                <!--<forceJavacCompilerUse>true</forceJavacCompilerUse>-->
+                <!--<release>8</release>-->
+                <!--</configuration>-->
+                <!--</plugin>-->
+                <!--<plugin>-->
+                <!--<groupId>io.swagger.codegen.v3</groupId>-->
+                <!--<artifactId>swagger-codegen-maven-plugin</artifactId>-->
+                <!--<version>${swagger.codegen.plugin-version}</version>-->
+                <!--</plugin>-->
+                <!--<plugin>-->
+                <!--<groupId>org.apache.maven.plugins</groupId>-->
+                <!--<artifactId>maven-clean-plugin</artifactId>-->
+                <!--<version>${maven.clean.plugin.version}</version>-->
+                <!--</plugin>-->
+            </plugins>
+        </pluginManagement>
+    </build>
 
 
 </project>

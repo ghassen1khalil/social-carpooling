@@ -26,7 +26,7 @@ public class FacebookService {
     String facebookAppId;
     @Value("${spring.social.facebook.appSecret}")
     String facebookSecret;
-    @Value("${server.host}")
+    @Value("${app.base.url}")
     String serverHost;
 
     public String createFacebookAuthorizationURL() {

@@ -2,6 +2,7 @@ package tn.social.carpooling.controller;
 
 import lombok.extern.slf4j.Slf4j;
 import org.apache.logging.log4j.util.Strings;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import tn.social.carpooling.service.FacebookService;
 
@@ -12,6 +13,7 @@ import java.io.IOException;
 @RestController
 @RequestMapping("/social")
 @Slf4j
+@CrossOrigin
 public class FacebookController {
 
     private FacebookService facebookService;
@@ -26,8 +28,10 @@ public class FacebookController {
     }
 
     //TODO : gérer les exceptions !!
-    @GetMapping("/createFacebookAuthorization")
-    public void createFacebookAuthorization(HttpServletResponse httpServletResponse) {
+    //@GetMapping("/createFacebookAuthorization")
+    @CrossOrigin
+    @RequestMapping(value = "/createFacebookAuthorization", method = RequestMethod.GET)
+    public void createFacebookAuthorization(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) {
         try {
             httpServletResponse.sendRedirect(facebookService.createFacebookAuthorizationURL());
         } catch (IOException e) {

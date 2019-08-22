@@ -13,8 +13,8 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="social-carpooling-backend" options="-parameters" />
-      <module name="social-carpooling-frontend" options="-parameters" />
+      <module name="social-carpooling-backend" options="" />
+      <module name="social-carpooling-frontend" options="" />
     </option>
   </component>
 </project>

@@ -1,5 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {NbDialogRef} from '@nebular/theme';
+import {FacebookService} from '../../core/services/facebook.service';
 
 @Component({
   selector: 'app-login-modal',
@@ -8,9 +9,8 @@ import {NbDialogRef} from '@nebular/theme';
 })
 export class LoginModalComponent implements OnInit {
 
-  //@Input() title: string;
-
-  constructor(protected ref: NbDialogRef<LoginModalComponent>) {
+  constructor(protected ref: NbDialogRef<LoginModalComponent>,
+              private facebookService: FacebookService) {
   }
 
   ngOnInit() {
@@ -18,6 +18,13 @@ export class LoginModalComponent implements OnInit {
 
   dismiss() {
     this.ref.close();
+  }
+
+  doLogin() {
+    this.facebookService.login().subscribe(result => {
+      //this.facebookService.getConnectedUserName().subscribe(result => {
+      console.log(result);
+    });
   }
 
 }
