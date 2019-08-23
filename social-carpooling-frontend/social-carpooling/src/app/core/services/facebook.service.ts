@@ -13,9 +13,9 @@ export class FacebookService {
   }
 
 
-  public login(): Observable<string> {
+  public login() {
     const headers = new HttpHeaders({'Access-Control-Allow-Origin': '*'});
-    return this.httpClient.get<string>(environment.context + 'social/' + urlConfig.login, {responseType: 'text'});
+    return this.httpClient.get(environment.context + 'social/' + urlConfig.login, {responseType: 'text'});
   }
 
   public getConnectedUserName() {

@@ -40,7 +40,7 @@ public class FacebookService {
 
     public String createFacebookAccessToken(String code) {
         FacebookConnectionFactory connectionFactory = new FacebookConnectionFactory(facebookAppId, facebookSecret);
-        AccessGrant accessGrant = connectionFactory.getOAuthOperations().exchangeForAccess(code, "http://localhost:8080/tn-social-carpooling/social/facebook", null);
+        AccessGrant accessGrant = connectionFactory.getOAuthOperations().exchangeForAccess(code, serverHost.concat("/tn-social-carpooling/social/facebook"), null);
         return accessGrant.getAccessToken();
     }
 

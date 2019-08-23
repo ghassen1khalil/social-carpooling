@@ -35,11 +35,6 @@ public class FacebookController {
     @ResponseBody
     public String createFacebookAuthorization(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) {
         httpServletResponse.setContentType("text/plain");
-        /*try {
-            httpServletResponse.sendRedirect(facebookService.createFacebookAuthorizationURL());
-        } catch (IOException e) {
-            log.error(e.getMessage());
-        }*/
         return facebookService.createFacebookAuthorizationURL();
     }
 
