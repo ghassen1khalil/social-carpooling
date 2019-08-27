@@ -14,7 +14,6 @@ export class FacebookService {
 
 
   public login() {
-    const headers = new HttpHeaders({'Access-Control-Allow-Origin': '*'});
     return this.httpClient.get(environment.context + 'social/' + urlConfig.login, {responseType: 'text'});
   }
 

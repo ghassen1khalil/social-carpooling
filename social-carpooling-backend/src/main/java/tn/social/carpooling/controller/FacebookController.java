@@ -11,10 +11,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 @RestController
 @RequestMapping("/social")
 @Slf4j
-@CrossOrigin
 public class FacebookController {
 
     private FacebookService facebookService;
@@ -29,24 +29,29 @@ public class FacebookController {
     }
 
     //TODO : gérer les exceptions !!
-    //@GetMapping("/createFacebookAuthorization")
-    @CrossOrigin
-    @RequestMapping(value = "/createFacebookAuthorization", method = RequestMethod.GET)
+    @GetMapping("/createFacebookAuthorization")
+    @CrossOrigin("*")
     @ResponseBody
     public String createFacebookAuthorization(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) {
         httpServletResponse.setContentType("text/plain");
         return facebookService.createFacebookAuthorizationURL();
     }
 
+    @CrossOrigin(origins = "*", allowedHeaders = "*")
     @GetMapping("/facebook")
-    public void createFacebookAccessToken(HttpServletRequest request, @RequestParam("code") String code) {
+    public void createFacebookAccessToken(HttpServletRequest request, HttpServletResponse httpServletResponse, @RequestParam("code") String code) {
         request.getSession().setAttribute("accessToken", facebookService.createFacebookAccessToken(code));
         log.info((String) request.getSession().getAttribute("accessToken"));
+        try {
+            httpServletResponse.sendRedirect("http://localhost:4200/ride");
+        }    catch (IOException e){
+            log.error(e.getMessage());
+        }
     }
 
     //TODO : gérer les exceptions !!
     @GetMapping("/getName")
-    public String getNameResponse(HttpServletRequest request) throws Exception{
+    public String getNameResponse(HttpServletRequest request) throws Exception {
         String accessToken = (String) request.getSession().getAttribute("accessToken");
         if (Strings.isNotBlank(accessToken) && Strings.isNotEmpty(accessToken)) {
             return facebookService.getName(accessToken);

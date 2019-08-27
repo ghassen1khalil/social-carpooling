@@ -4,7 +4,8 @@ import {CarpoolingComponent} from './carpooling/carpooling.component';
 import {NebularComponentsModule} from '../shared/nebular-components.module';
 import {HeaderComponent} from './header/header.component';
 import {LoginModalComponent} from './login-modal/login-modal.component';
-import { TimeSelectorComponent } from './time-selector/time-selector.component';
+import {TimeSelectorComponent} from './time-selector/time-selector.component';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 
 @NgModule({
@@ -16,6 +17,8 @@ import { TimeSelectorComponent } from './time-selector/time-selector.component';
   ],
   imports: [
     CommonModule,
+    FormsModule,
+    ReactiveFormsModule,
     NebularComponentsModule,
   ],
   exports: [

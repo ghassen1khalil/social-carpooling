@@ -1,54 +1,68 @@
 <nb-layout>
   <nb-layout-column class="" style="display: flex; flex-direction: column">
-    <nb-card size="small">
+    <nb-card>
       <nb-card-body>
-        <div class="flex-display flex-column-direction">
+        <h1>Trouver un trajet</h1>
+      </nb-card-body>
+    </nb-card>
+    <nb-card size="medium">
+      <nb-card-body>
+        <form [formGroup]="rideForm">
+          <div class="flex-display flex-column-direction">
 
-          <div class="flex-display flex-row-direction" style="align-items: center">
-            <p style="margin-right: 10px"> Je suis :</p>
-            <nb-select placeholder="" [(selected)]="driverOrPassenger" style="min-width: 13rem">
-              <nb-option value="drive">Conducteur</nb-option>
-              <nb-option value="passenger">Passager</nb-option>
-            </nb-select>
+            <div class="flex-display flex-row-direction" style="align-items: center">
+              <p style="margin-right: 10px"> Je suis :</p>
+              <nb-select formControlName="driverOrPassenger" placeholder="" [(selected)]="driverOrPassenger"
+                         style="min-width: 13rem">
+                <nb-option value="drive">Conducteur</nb-option>
+                <nb-option value="passenger">Passager</nb-option>
+              </nb-select>
+            </div>
+
+            <div class="flex-display flex-row-direction" style="align-items: center">
+              <p style="margin-right: 10px"> Nombre de places :</p>
+              <nb-select formControlName="availablePlaces" placeholder="" [(selected)]="nbPlaces"
+                         style="min-width: 13rem">
+                <nb-option value="1">1</nb-option>
+                <nb-option value="2">2</nb-option>
+                <nb-option value="3">3</nb-option>
+                <nb-option value="4">4</nb-option>
+              </nb-select>
+            </div>
+
+            <div class="flex-display flex-row-direction" style="align-items: center">
+              <p style="margin-right: 10px">Départ :</p>
+              <input nbInput formControlName="from" [(ngModel)]="from" style="margin-right: 10px">
+              <p style="margin-right: 10px">Lieu de RDV :</p>
+              <input nbInput formControlName="rdv" [(ngModel)]="rdv">
+            </div>
+
+            <div class="flex-display flex-row-direction" style="align-items: center">
+              <p style="margin-right: 10px">Arrivée :</p>
+              <input nbInput formControlName="destination" [(ngModel)]="destination">
+            </div>
+
+            <div class="flex-display flex-row-direction" style="align-items: center">
+              <p style="margin-right: 10px">Date et horaire :</p>
+              <input nbInput formControlName="date" [nbDatepicker]="datepicker" style="margin-right: 10px">
+              <nb-datepicker #datepicker></nb-datepicker>
+              <!--<app-time-selector formControlName="time" (timeEventEmitter)="onClick($event)"></app-time-selector>-->
+              <!--<app-time-selector [timeForm]="rideForm.controls.time" formControlName="time"></app-time-selector>-->
+              <app-time-selector [timeForm]="rideForm.controls.time"></app-time-selector>
+            </div>
+
+            <div class="flex-display flex-row-direction" style="align-items: center">
+              <nb-checkbox formControlName="airConditionner" (checkedChange)="toggle($event,'airConditionner')">
+                Climatiseur
+              </nb-checkbox>
+              <nb-checkbox formControlName="smoking" (checkedChange)="toggle($event,'smoking')">Tabac</nb-checkbox>
+              <nb-checkbox formControlName="music" (checkedChange)="toggle($event,'music')">Musique</nb-checkbox>
+              <nb-checkbox formControlName="luggage" (checkedChange)="toggle($event,'luggage')">Bagages</nb-checkbox>
+            </div>
+
           </div>
-
-          <div class="flex-display flex-row-direction" style="align-items: center">
-            <p style="margin-right: 10px"> Nombre de places :</p>
-            <nb-select placeholder="" [(selected)]="nbPlaces" style="min-width: 13rem">
-              <nb-option value="1">1</nb-option>
-              <nb-option value="2">2</nb-option>
-              <nb-option value="3">3</nb-option>
-              <nb-option value="4">4</nb-option>
-            </nb-select>
-          </div>
-
-          <div class="flex-display flex-row-direction" style="align-items: center">
-            <p style="margin-right: 10px">Départ :</p>
-            <input nbInput [(ngModel)]="from" style="margin-right: 10px">
-            <p style="margin-right: 10px">Lieu de RDV :</p>
-            <input nbInput [(ngModel)]="rdv">
-          </div>
-
-          <div class="flex-display flex-row-direction" style="align-items: center">
-            <p style="margin-right: 10px">Arrivée :</p>
-            <input nbInput [(ngModel)]="destination">
-          </div>
-
-          <div class="flex-display flex-row-direction" style="align-items: center">
-            <p style="margin-right: 10px">Date et horaire :</p>
-            <input nbInput [nbDatepicker]="datepicker" style="margin-right: 10px">
-            <nb-datepicker #datepicker></nb-datepicker>
-            <app-time-selector (timeEventEmitter)="onClick($event)"></app-time-selector>
-          </div>
-
-          <div class="flex-display flex-row-direction" style="align-items: center">
-            <nb-checkbox (checkedChange)="toggle($event,'airConditionner')">Climatiseur</nb-checkbox>
-            <nb-checkbox (checkedChange)="toggle($event,'smoking')">Tabac</nb-checkbox>
-            <nb-checkbox (checkedChange)="toggle($event,'music')">Musique</nb-checkbox>
-            <nb-checkbox (checkedChange)="toggle($event,'luggage')">Bagages</nb-checkbox>
-          </div>
-
-        </div>
+        </form>
+        <button nbButton (click)="onClick()">Publier</button>
       </nb-card-body>
     </nb-card>
   </nb-layout-column>
