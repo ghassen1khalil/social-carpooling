@@ -45,9 +45,7 @@
             <div class="flex-display flex-row-direction" style="align-items: center">
               <p style="margin-right: 10px">Date et horaire :</p>
               <input nbInput formControlName="date" [nbDatepicker]="datepicker" style="margin-right: 10px">
-              <nb-datepicker #datepicker></nb-datepicker>
-              <!--<app-time-selector formControlName="time" (timeEventEmitter)="onClick($event)"></app-time-selector>-->
-              <!--<app-time-selector [timeForm]="rideForm.controls.time" formControlName="time"></app-time-selector>-->
+              <nb-datepicker #datepicker ></nb-datepicker>
               <app-time-selector formControlName="time"></app-time-selector>
             </div>
 

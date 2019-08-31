@@ -13,11 +13,11 @@ import java.time.LocalDate;
 @Builder
 public class Trip {
 
+    private long id;
     private LocalDate date;
-    //private String time;
+    private String time;
     private String from;
     private String destination;
     private short availablePlaces;
-
-
+    private String rdv;
 }

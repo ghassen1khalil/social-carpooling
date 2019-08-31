@@ -55,11 +55,7 @@ export class RideComponent implements OnInit {
 
     this.tripService.saveTrip(trip).subscribe(res => {
       console.log("Trip created successfully ID = " + res);
-    })
-
-    /*Object.keys(this.rideForm.controls).forEach( key => {
-      console.log(this.rideForm.controls[key].value);
-    });*/
+    });
   }
 
   toggle(checked: boolean, obj: string) {
@@ -72,7 +68,6 @@ export class RideComponent implements OnInit {
     } else if (obj === 'luggage'){
       this.isLuggage = checked;
     }
-    //console.log(obj);
   }
 
 }

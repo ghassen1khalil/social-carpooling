@@ -13,7 +13,6 @@ export class TripService {
 
 
   public saveTrip(trip: Trip): Observable<string> {
-    console.log(environment.context + 'trip/save');
     return this.http.post<string>(environment.context + 'trip/save', trip);
   }
 }

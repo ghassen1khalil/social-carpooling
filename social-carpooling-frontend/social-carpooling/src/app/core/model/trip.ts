@@ -1,16 +1,14 @@
-import {Driver} from './driver';
-
 export class Trip {
-  id: string;
+
   date: string;
   time: string;
   from: string;
   destination: string;
   availablePlaces: number
   rdv: string;
-  driver: Driver;
 
-  constructor(){}
+  constructor() {
+  }
 
 
   /*constructor(date: string, time: string, from: string, destination: string, availablePlaces: number, rdv: string, driver: Driver) {
