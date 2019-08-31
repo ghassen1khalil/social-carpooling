@@ -32,13 +32,13 @@ export class LoginModalComponent implements OnInit {
     };
 
     this.facebookService.login().subscribe(result => {
-      window.open(result.toString(), '');
-      // this.http.get(result.toString(), httpOptions).subscribe(fb => {
-      //   console.log(fb);
-      // });
 
-      // this.http.get(result).subscribe(result =>
-      //   console.log(result));
+      //window.open(result.toString(), '');
+
+      this.http.get(result.toString(), httpOptions).subscribe(fb => {
+        console.log(fb);
+      });
+
     });
   }
 

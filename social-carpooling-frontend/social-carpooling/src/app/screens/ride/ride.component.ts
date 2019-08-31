@@ -34,10 +34,7 @@ export class RideComponent implements OnInit {
       rdv: [''],
       destination: [''],
       date: [''],
-      time: this.formBuilder.group({
-        hour: [''],
-        minute: ['']
-      }),
+      time: [''],
       airConditionner: [''],
       smoking: [''],
       music: [''],
