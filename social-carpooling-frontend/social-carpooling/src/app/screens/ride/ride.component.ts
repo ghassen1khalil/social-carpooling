@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
 import {FormBuilder, FormGroup} from '@angular/forms';
 import {Trip} from '../../core/model/trip';
 import {TripService} from '../../core/services/trip.service';
@@ -22,28 +22,44 @@ export class RideComponent implements OnInit {
   public isMusic: boolean = false;
   public isLuggage: boolean = false;
 
+  latitude: number;
+  longitude: number;
+  zoom:number;
+
   constructor(private formBuilder: FormBuilder,
               private tripService: TripService) {
   }
 
   ngOnInit() {
+    this.setCurrentLocation();
     this.rideForm = this.formBuilder.group({
-      driverOrPassenger: [''],
-      availablePlaces: [''],
-      from: [''],
-      rdv: [''],
-      destination: [''],
-      date: [''],
-      time: [''],
-      airConditionner: [''],
-      smoking: [''],
-      music: [''],
-      luggage: [''],
-    })
+      driverOrPassenger: [''],
+      availablePlaces: [''],
+      from: [''],
+      rdv: [''],
+      destination: [''],
+      date: [''],
+      time: [''],
+      airConditionner: [''],
+      smoking: [''],
+      music: [''],
+      luggage: [''],
+    });
+  }
+
+  // Get Current Location Coordinates
+  private setCurrentLocation() {
+    if ('geolocation' in navigator) {
+      navigator.geolocation.getCurrentPosition((position) => {
+        this.latitude = position.coords.latitude;
+        this.longitude = position.coords.longitude;
+        this.zoom = 15;
+      });
+    }
   }
 
   onClick() {
-    let trip = new Trip();
+    const trip = new Trip();
     trip.availablePlaces = +this.rideForm.controls['availablePlaces'].value;
     trip.from = this.rideForm.controls['from'].value;
     trip.rdv = this.rideForm.controls['rdv'].value;
@@ -54,18 +70,18 @@ export class RideComponent implements OnInit {
     console.log(trip);
 
     this.tripService.saveTrip(trip).subscribe(res => {
-      console.log("Trip created successfully ID = " + res);
+      console.log('Trip created successfully ID = ' + res);
     });
   }
 
   toggle(checked: boolean, obj: string) {
-    if (obj === 'airConditionner'){
+    if (obj === 'airConditionner') {
       this.isAirConditionned = checked;
-    } else if (obj === 'smoking'){
+    } else if (obj === 'smoking') {
       this.isSmoking = checked;
-    } else if (obj === 'music'){
+    } else if (obj === 'music') {
       this.isMusic = checked;
-    } else if (obj === 'luggage'){
+    } else if (obj === 'luggage') {
       this.isLuggage = checked;
     }
   }

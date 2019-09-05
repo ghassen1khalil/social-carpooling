@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+.show-outline {
+  outline: 1px dashed red;
+}
+
+.flex-display {
+  display: flex;
+}
+
+.flex-column-direction {
+  flex-direction: column;
+}
+
+.flex-column-reverse-direction {
+  flex-direction: column-reverse;
+}
+
+.flex-row-direction {
+  flex-direction: row;
+}
+
+.flex-row-reverse-direction {
+  flex-direction: row-reverse;
+}
+
+.only-desktop {
+  display: flex;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.only-mobile {
+  display: none;
+  @media screen and (max-width: 767px) {
+    display: flex;
+  }
+}
