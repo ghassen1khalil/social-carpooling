@@ -6,6 +6,7 @@ import {HeaderComponent} from './header/header.component';
 import {LoginModalComponent} from './login-modal/login-modal.component';
 import {TimeSelectorComponent} from './time-selector/time-selector.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { AddressAutocompleteComponent } from './address-autocomplete/address-autocomplete.component';
 
 
 @NgModule({
@@ -14,6 +15,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     HeaderComponent,
     LoginModalComponent,
     TimeSelectorComponent,
+    AddressAutocompleteComponent,
   ],
   imports: [
     CommonModule,
@@ -26,6 +28,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     HeaderComponent,
     LoginModalComponent,
     TimeSelectorComponent,
+    AddressAutocompleteComponent,
   ],
   entryComponents: [
     LoginModalComponent,

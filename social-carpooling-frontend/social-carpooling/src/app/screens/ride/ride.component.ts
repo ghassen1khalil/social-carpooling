@@ -1,4 +1,4 @@
-import {Component, OnInit, ViewChild} from '@angular/core';
+import {Component, NgZone, OnInit, ViewChild} from '@angular/core';
 import {FormBuilder, FormGroup} from '@angular/forms';
 import {Trip} from '../../core/model/trip';
 import {TripService} from '../../core/services/trip.service';
@@ -26,8 +26,13 @@ export class RideComponent implements OnInit {
   longitude: number;
   zoom:number;
 
+
+  address: Object;
+  formattedAddress: string;
+
   constructor(private formBuilder: FormBuilder,
-              private tripService: TripService) {
+              private tripService: TripService,
+              public zone: NgZone) {
   }
 
   ngOnInit() {
@@ -84,6 +89,12 @@ export class RideComponent implements OnInit {
     } else if (obj === 'luggage') {
       this.isLuggage = checked;
     }
+  }
+
+  getAddress(place: object) {
+    this.address = place['formatted_address'];
+    this.formattedAddress = place['formatted_address'];
+    this.zone.run(() => this.formattedAddress = place['formatted_address']);
   }
 
 }

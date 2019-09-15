@@ -3,6 +3,7 @@
     <nb-card>
       <nb-card-body>
         <h1>Trouver un trajet</h1>
+        <app-address-autocomplete (setAddress)="getAddress($event)" adressType="geocode"></app-address-autocomplete>
       </nb-card-body>
     </nb-card>
     <div class="pure-g">
@@ -70,7 +71,7 @@
       <div class="pure-u-xl-1-3 pure-u-lg-1-3 pure-u-md-1-3 pure-u-1-3 only-desktop">
         <nb-card size="medium">
           <nb-card-body>
-            <agm-map
+            <agm-map class="show-outline"
               [latitude]="latitude"
               [longitude]="longitude"
               [zoom]="zoom" >
