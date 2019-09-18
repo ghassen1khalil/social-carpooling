@@ -1,4 +1,4 @@
-import {Component, NgZone, OnInit, ViewChild} from '@angular/core';
+import {Component, NgZone, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup} from '@angular/forms';
 import {Trip} from '../../core/model/trip';
 import {TripService} from '../../core/services/trip.service';
@@ -23,8 +23,10 @@ export class RideComponent implements OnInit {
   public isLuggage: boolean = false;
 
   latitude: number;
+  latitude1: number;
   longitude: number;
-  zoom:number;
+  longitude1: number;
+  zoom: number;
 
 
   address: Object;
@@ -36,7 +38,14 @@ export class RideComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.setCurrentLocation();
+    // this.setCurrentLocation();
+
+    this.latitude = 51.678418;
+    this.latitude1 = 55.678418;
+    this.longitude = 7.809007;
+    this.longitude1 = 9.809007;
+    this.zoom = 10;
+
     this.rideForm = this.formBuilder.group({
       driverOrPassenger: [''],
       availablePlaces: [''],
@@ -54,13 +63,16 @@ export class RideComponent implements OnInit {
 
   // Get Current Location Coordinates
   private setCurrentLocation() {
-    if ('geolocation' in navigator) {
+    /*if ('geolocation' in navigator) {
       navigator.geolocation.getCurrentPosition((position) => {
         this.latitude = position.coords.latitude;
         this.longitude = position.coords.longitude;
         this.zoom = 15;
       });
-    }
+    }*/
+    this.latitude = 51.678418;
+    this.longitude = 7.809007;
+    this.zoom = 10;
   }
 
   onClick() {
