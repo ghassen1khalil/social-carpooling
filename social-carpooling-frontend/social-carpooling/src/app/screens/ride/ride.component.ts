@@ -32,18 +32,14 @@ export class RideComponent implements OnInit {
   address: Object;
   formattedAddress: string;
 
+  markers = [{latitude: 51.678418, longitude: 7.809007}, {latitude: 52.678418, longitude: 8.809007}];
+
   constructor(private formBuilder: FormBuilder,
               private tripService: TripService,
               public zone: NgZone) {
   }
 
   ngOnInit() {
-    // this.setCurrentLocation();
-
-    this.latitude = 51.678418;
-    this.latitude1 = 55.678418;
-    this.longitude = 7.809007;
-    this.longitude1 = 9.809007;
     this.zoom = 10;
 
     this.rideForm = this.formBuilder.group({
@@ -59,20 +55,6 @@ export class RideComponent implements OnInit {
       music: [''],
       luggage: [''],
     });
-  }
-
-  // Get Current Location Coordinates
-  private setCurrentLocation() {
-    /*if ('geolocation' in navigator) {
-      navigator.geolocation.getCurrentPosition((position) => {
-        this.latitude = position.coords.latitude;
-        this.longitude = position.coords.longitude;
-        this.zoom = 15;
-      });
-    }*/
-    this.latitude = 51.678418;
-    this.longitude = 7.809007;
-    this.zoom = 10;
   }
 
   onClick() {
