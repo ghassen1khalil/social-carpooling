@@ -2,6 +2,9 @@ import {Component, NgZone, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup} from '@angular/forms';
 import {Trip} from '../../core/model/trip';
 import {TripService} from '../../core/services/trip.service';
+import LatLng = google.maps.LatLng;
+import {Coordinates} from '../../core/model/coordinates';
+import {Marker} from '../../core/model/marker';
 
 @Component({
   selector: 'app-ride',
@@ -23,16 +26,13 @@ export class RideComponent implements OnInit {
   public isLuggage: boolean = false;
 
   latitude: number;
-  latitude1: number;
   longitude: number;
-  longitude1: number;
   zoom: number;
 
+  /*public fromMarker: Coordinates;
+  public destinationMarker: Coordinates;*/
+  public markers: Marker[] = [];
 
-  address: Object;
-  formattedAddress: string;
-
-  markers = [{latitude: 51.678418, longitude: 7.809007}, {latitude: 52.678418, longitude: 8.809007}];
 
   constructor(private formBuilder: FormBuilder,
               private tripService: TripService,
@@ -40,8 +40,13 @@ export class RideComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.zoom = 10;
+    this.latitude = 36.81897;
+    this.longitude = 10.16579;
+    this.zoom = 5;
+    this.buildForm();
+  }
 
+  private buildForm() {
     this.rideForm = this.formBuilder.group({
       driverOrPassenger: [''],
       availablePlaces: [''],
@@ -85,10 +90,26 @@ export class RideComponent implements OnInit {
     }
   }
 
-  getAddress(place: object) {
-    this.address = place['formatted_address'];
-    this.formattedAddress = place['formatted_address'];
-    this.zone.run(() => this.formattedAddress = place['formatted_address']);
+  setCoordinates(coordinates: Coordinates, type: number) {
+    let marker: Marker = new Marker();
+    marker.coordinates = coordinates;
+    marker.type = type;
+    if (this.markers.length > 0) {
+      let index: number = -1;
+      for (let m of this.markers) {
+        if (m.type === marker.type) {
+          index = this.markers.indexOf(m);
+        }
+      }
+      if (index !== -1) {
+        this.markers.splice(index, 1);
+        this.markers.push(marker);
+      } else {
+        this.markers.push(marker);
+      }
+    } else {
+      this.markers.push(marker);
+    }
   }
 
 }

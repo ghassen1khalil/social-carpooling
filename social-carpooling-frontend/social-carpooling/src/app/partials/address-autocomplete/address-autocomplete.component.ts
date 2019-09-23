@@ -1,6 +1,8 @@
 import {AfterViewInit, Component, EventEmitter, Input, OnInit, Output, ViewChild} from '@angular/core';
-import { } from 'googlemaps';
+import {} from 'googlemaps';
 import {ControlValueAccessor, NG_VALUE_ACCESSOR} from '@angular/forms';
+import LatLng = google.maps.LatLng;
+import {Coordinates} from '../../core/model/coordinates';
 
 
 @Component({
@@ -19,7 +21,9 @@ export class AddressAutocompleteComponent implements OnInit, AfterViewInit, Cont
 
   @Input()
   adressType: string;
-  // @Output() setAddress: EventEmitter<any> = new EventEmitter();
+
+  @Output() coordinates: EventEmitter<Coordinates> = new EventEmitter<Coordinates>();
+
   setAddress: string;
   @ViewChild('addresstext', {static: true}) addresstext;
 
@@ -27,7 +31,8 @@ export class AddressAutocompleteComponent implements OnInit, AfterViewInit, Cont
   private onChange: (value: string) => void;
 
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }
@@ -39,20 +44,20 @@ export class AddressAutocompleteComponent implements OnInit, AfterViewInit, Cont
   private getPlaceAutocomplete() {
     const autocomplete = new google.maps.places.Autocomplete(this.addresstext.nativeElement,
       {
-        componentRestrictions: { country: 'TN' },
+        componentRestrictions: {country: 'TN'},
         types: [this.adressType]  // 'establishment' / 'address' / 'geocode'
       });
     google.maps.event.addListener(autocomplete, 'place_changed', () => {
       const place = autocomplete.getPlace();
-      // this.invokeEvent(place);
       this.writeValue(place);
       this.onChange(place.formatted_address);
+
+      let locationCoordinats: Coordinates = new Coordinates();
+      locationCoordinats.latitude = place.geometry.location.lat();
+      locationCoordinats.longitude = place.geometry.location.lng();
+      this.coordinates.emit(locationCoordinats);
     });
   }
-
-  /*invokeEvent(place: any) {
-    this.setAddress = (place);
-  }*/
 
   registerOnChange(onChange: (value: string) => void) {
     this.onChange = onChange;

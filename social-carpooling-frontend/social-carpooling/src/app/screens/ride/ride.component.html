@@ -3,7 +3,6 @@
     <nb-card>
       <nb-card-body>
         <h1>Trouver un trajet</h1>
-        <!--<app-address-autocomplete (setAddress)="getAddress($event)" adressType="geocode"></app-address-autocomplete>-->
       </nb-card-body>
     </nb-card>
     <div class="pure-g">
@@ -36,7 +35,7 @@
                 <div class="flex-display flex-row-direction" style="align-items: center">
                   <p style="margin-right: 10px">Départ :</p>
                   <!--<input nbInput formControlName="from" style="margin-right: 10px">-->
-                  <app-address-autocomplete formControlName="from" [adressType]="'geocode'" style="margin-right: 10px"></app-address-autocomplete>
+                  <app-address-autocomplete formControlName="from" (coordinates)="setCoordinates($event, 1)" [adressType]="'geocode'" style="margin-right: 10px"></app-address-autocomplete>
                   <!--<p style="margin-right: 10px">Lieu de RDV :</p>
                   <input nbInput formControlName="rdv">-->
                 </div>
@@ -44,7 +43,7 @@
                 <div class="flex-display flex-row-direction" style="align-items: center">
                   <p style="margin-right: 10px">Arrivée :</p>
                   <!--<input nbInput formControlName="destination">-->
-                  <app-address-autocomplete formControlName="destination" [adressType]="'geocode'" style="margin-right: 10px"></app-address-autocomplete>
+                  <app-address-autocomplete formControlName="destination" (coordinates)="setCoordinates($event, 2)" [adressType]="'geocode'" style="margin-right: 10px"></app-address-autocomplete>
                 </div>
 
                 <div class="flex-display flex-row-direction" style="align-items: center">
@@ -79,11 +78,10 @@
                      [longitude]="longitude"
                      [zoom]="zoom">
               <agm-marker
-                [latitude]="latitude"
-                [longitude]="longitude"></agm-marker>
-              <agm-marker
-                [latitude]="latitude1"
-                [longitude]="longitude1"></agm-marker>
+                *ngFor="let marker of markers"
+                [latitude]="marker.coordinates.latitude"
+                [longitude]="marker.coordinates.longitude"></agm-marker>
+
             </agm-map>
           </nb-card-body>
         </nb-card>
