@@ -24,21 +24,8 @@ export class LoginModalComponent implements OnInit {
   }
 
   doLogin() {
-
-    const httpOptions = {
-      headers: new HttpHeaders({
-        'Access-Control-Allow-Origin': '*'
-      })
-    };
-
     this.facebookService.login().subscribe(result => {
-
-      //window.open(result.toString(), '');
-
-      this.http.get(result.toString(), httpOptions).subscribe(fb => {
-        console.log(fb);
-      });
-
+      window.open(result, '_self');
     });
   }
 
