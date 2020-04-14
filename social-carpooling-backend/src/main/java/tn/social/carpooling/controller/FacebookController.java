@@ -24,6 +24,7 @@ public class FacebookController {
     }
 
     @GetMapping("/login")
+    @CrossOrigin(origins = "*", allowedHeaders = "*")
     public String login() {
         return "Call login() from backend";
     }
