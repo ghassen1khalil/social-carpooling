@@ -1,15 +1,16 @@
 package tn.social.carpooling.controller;
 
+import com.restfb.types.Group;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.logging.log4j.util.Strings;
-import org.springframework.http.MediaType;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+import tn.social.carpooling.core.model.FacebookGroup;
 import tn.social.carpooling.service.FacebookService;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.List;
 
 @CrossOrigin(origins = "*", allowedHeaders = "*")
 @RestController
@@ -45,7 +46,7 @@ public class FacebookController {
         log.info((String) request.getSession().getAttribute("accessToken"));
         try {
             httpServletResponse.sendRedirect("http://localhost:4200/ride");
-        }    catch (IOException e){
+        } catch (IOException e) {
             log.error(e.getMessage());
         }
     }
@@ -70,5 +71,11 @@ public class FacebookController {
         } else {
             throw new Exception("Token null ou vide");
         }
+    }
+
+    @GetMapping("/groups/carpooling")
+    public List<FacebookGroup> getCarpoolingList(HttpServletRequest request) throws Exception {
+        String accessToken = (String) request.getSession().getAttribute("accessToken");
+        return facebookService.getUserCarpoolingGroups(accessToken);
     }
 }

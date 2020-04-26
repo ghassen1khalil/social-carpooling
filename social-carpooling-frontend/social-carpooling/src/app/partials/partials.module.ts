@@ -7,6 +7,7 @@ import {LoginModalComponent} from './login-modal/login-modal.component';
 import {TimeSelectorComponent} from './time-selector/time-selector.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { AddressAutocompleteComponent } from './address-autocomplete/address-autocomplete.component';
+import { ProfilePreferencesComponent } from './profile-preferences/profile-preferences.component';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { AddressAutocompleteComponent } from './address-autocomplete/address-aut
     LoginModalComponent,
     TimeSelectorComponent,
     AddressAutocompleteComponent,
+    ProfilePreferencesComponent,
   ],
   imports: [
     CommonModule,
@@ -32,6 +34,7 @@ import { AddressAutocompleteComponent } from './address-autocomplete/address-aut
   ],
   entryComponents: [
     LoginModalComponent,
+    ProfilePreferencesComponent,
   ],
 })
 export class PartialsModule {

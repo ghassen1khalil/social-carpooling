@@ -1,3 +1,4 @@
 export const urlConfig = {
-  login: 'createFacebookAuthorization',
+  login: 'social/createFacebookAuthorization',
+  saveSelectedGroups: 'user/groups',
 }

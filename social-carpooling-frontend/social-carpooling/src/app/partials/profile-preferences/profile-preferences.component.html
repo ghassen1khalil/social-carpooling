@@ -1,0 +1,30 @@
+<div style="width: 600px">
+  <nb-card  [nbSpinner]="isLoaderOn" nbSpinnerSize="large" nbSpinnerStatus="primary" accent="info">
+    <nb-card-header>
+      <div class="flex-display flex-row-direction">
+        <nb-icon icon="checkmark-circle-outline" class="soca-groups_modal_icon"></nb-icon>
+        Bienvenue {{userName}}
+      </div>
+    </nb-card-header>
+
+    <nb-card-body>
+      <p *ngIf="isSetPrefStart">Vous vous connecter pour la première fois sur notre application.<br/><br/>
+        Nous allons vous guider pour le remplissage de vos préférences sur cette application !</p>
+
+
+      <div *ngIf="!isSetPrefStart">
+        <p>Ceci est la liste des groupes de Covoiturage que vous avez rejoint.<br/>
+        Veuillez cocher ceux que vous voudrez utiliser pour vos prochaines publications d'annonces.
+        </p>
+        <div class="flex-display flex-column-direction soca-groups-list">
+          <nb-checkbox (checkedChange)="toggle(group.id)" *ngFor="let group of userAllCarpoolingGroups" status="info">{{group.name}}</nb-checkbox>
+        </div>
+      </div>
+    </nb-card-body>
+
+    <nb-card-footer class="flex-display flex-row-reverse-direction">
+      <button nbButton *ngIf="isSetPrefStart" (click)="isSetPrefStart = false">Let's go</button>
+      <button nbButton *ngIf="!isSetPrefStart" (click)="saveSelectedGroups()">Enregistrer</button>
+    </nb-card-footer>
+  </nb-card>
+</div>

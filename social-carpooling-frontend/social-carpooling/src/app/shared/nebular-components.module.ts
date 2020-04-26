@@ -5,7 +5,7 @@ import {
   NbCardModule, NbCheckboxModule,
   NbDatepickerModule, NbDialogModule, NbIconModule,
   NbInputModule,
-  NbLayoutModule, NbSelectModule,
+  NbLayoutModule, NbSelectModule, NbSpinnerModule, NbStepperModule,
   NbThemeModule, NbUserModule
 } from '@nebular/theme';
 import {NbEvaIconsModule} from '@nebular/eva-icons';
@@ -27,6 +27,8 @@ import {NbEvaIconsModule} from '@nebular/eva-icons';
     NbDialogModule.forRoot(),
     NbSelectModule,
     NbCheckboxModule,
+    NbStepperModule,
+    NbSpinnerModule,
 
 
   ],
@@ -43,6 +45,8 @@ import {NbEvaIconsModule} from '@nebular/eva-icons';
     NbDialogModule,
     NbSelectModule,
     NbCheckboxModule,
+    NbStepperModule,
+    NbSpinnerModule,
 
   ]
 })
