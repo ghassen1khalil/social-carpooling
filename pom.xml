@@ -29,7 +29,7 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
 
-        <spring-boot-dependencies-version>2.1.6.RELEASE</spring-boot-dependencies-version>
+        <spring-boot-dependencies-version>2.5.12</spring-boot-dependencies-version>
         <springfox-swagger-ui-version>2.9.2</springfox-swagger-ui-version>
         <lombok-version>1.18.2</lombok-version>
         <spring-social-facebook.version>2.0.3.RELEASE</spring-social-facebook.version>
